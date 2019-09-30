@@ -22,11 +22,10 @@ public class Lab04avst
 
 
 
+
 		System.out.println("Principal: " + principal);
 		System.out.println("Annual Rate: " + annualRate + "%");
 		System.out.println("Number of Years: " + numYears);
-		System.out.println("Monthly Payment: ");
-
-
+		System.out.println("Monthly Payment: " + ((annualRate/12)/100) * Math.pow(((1 + annualRate/12)/100),360));
 	}
 }
